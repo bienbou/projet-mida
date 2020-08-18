@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+		
+<tiles-definitions>
+
+<definition name="mytemplate"  template="/WEB-INF/views/templates/admin_templates.jsp">
+<put-attribute name="content" value="" />
+</definition>
+
+<definition name="admin.dashboard.dashboard1"  extends="mytemplate">
+<put-attribute name="content" value="/WEB-INF/views/admin/dashboard/dashboard1.jsp" />
+</definition>
+
+<definition name="admin.dashboard.client"  extends="mytemplate">
+<put-attribute name="content" value="/WEB-INF/views/admin/dashboard/client.jsp" />
+</definition>
+
+<definition name="admin.dashboard.avocat"  extends="mytemplate">
+<put-attribute name="content" value="/WEB-INF/views/admin/dashboard/avocat.jsp" />
+</definition>
+
+</tiles-definitions>
